@@ -25,6 +25,8 @@ increment the display value and likewise for the decrement button.
 public class twoChoices extends Application {
     private int count;
     private Text countText;
+    private Text radiusText;
+    private int radius;
 
     public void start(Stage stage) {
         count = 50;
@@ -35,6 +37,8 @@ public class twoChoices extends Application {
 
         Button pushDown = new Button("Push Me To Get Low!");
         pushDown.setOnAction(this::processButtonPressDown);
+
+        Text
 
         FlowPane pane = new FlowPane(pushDown, countText, pushUp);
         pane.setAlignment(Pos.CENTER);
