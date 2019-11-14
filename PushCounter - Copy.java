@@ -43,7 +43,7 @@ public class PushCounter extends Application
     private void processButtonPress(ActionEvent event)
     {
         // Counts number of button clicks and shows the result on a label
-        count++;
+        count += 1;
         countText.setText("Pushes: " + count);
     }
 }
